@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header.top{
+    width: 100%;
+    padding: 20px 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+}
+header.top .title-top{
+    color: #ffffff;
+    font-size: 24px;
+    margin-left: 6%;
+}
+header.top .buttom-top{
+    padding: 8px 40px;
+    border-radius: 20px;
+    border-style: none;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-right: 6%;
+    outline: none;
+}
+header.top .buttom-top:hover{
+    background-color: rgba(255, 255, 255, 0.380);
+}
+
+body{
+    
+    overflow: hidden;
+}
+
+section.content-left{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.479);
+    width: 50px;
+    height: 100%;
+    right: 0;
+    z-index: 100;
+}
+section.content-left .cotainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 90%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+section.content-left .cotainer .bars .bars-img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+section.content-left .cotainer .icons .cont-itens{
+    list-style: none;
+}
+section.content-left .cotainer .icons .cont-itens .itens-icon{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+section.content-left .cotainer .icons .cont-itens .itens-icon:hover{
+    background-color: rgba(255, 255, 255, 0.380);
+    transition: 0.6s;
+    transform: rotate(360deg);
+    width: 28px;
+    height: 28px;
+}
+section.content-left .cotainer .icons .icons-img{
+    width: 30px;
+    height: 30px;
+    transform: scale(0.5);
+}
+section.content-left .cotainer .compartilhar-sobre .itens-share{
+    list-style: none;
+}
+section.content-left .cotainer .compartilhar-sobre .itens-share .icons-share{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+section.content-left .cotainer .compartilhar-sobre .itens-share .icons-share:hover{
+    background-color: rgba(255, 255, 255, 0.380);
+    transition: 0.6s;
+    transform: rotate(360deg);
+    width: 28px;
+    height: 28px;
+}
+section.content-left .cotainer .compartilhar-sobre .itens-share .icons-share .share{
+    width: 25px;
+    height: 25px;
+    transform: scale(0.5);
+}
+section.content-left .cotainer .compartilhar-sobre .itens-share .icons-share .share-inter{
+    width: 30px;
+    height: 30px;
+    transform: scale(0.5);
+    filter: invert(2);
+}
+
+
+main.center{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/underwater.png');
+    background-size: 100% 100%;
+    z-index: 100;
+}
+main.center .name-titles{
+    position: absolute;
+    margin-top: 16%;
+    margin-left: 8%;
+    max-width: 600px;
+    z-index: 100;
+}
+main.center .name-titles h3{
+    font-size: 14px;
+    font-weight: 300;
+    color: #ffffff;
+}
+main.center .name-titles h1{
+    font-size: 60px;
+    color: #ffffff;
+}
+main.center .name-titles .button{
+    padding: 8px 40px;
+    border-radius: 20px;
+    border-style: none;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+    z-index: 100;
+}
+main.center .name-titles .button:hover{
+    background-color: rgba(0, 0, 0, 0.38);
+}
+
+.bubble{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    z-index: 1;
+    bottom: -70px;
+}
+.bubble img{
+    width: 50px;
+    animation: bubble 7s linear infinite
+}
+@keyframes bubble{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+
+        opacity: 1;
+    }
+    70%{
+        
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-100vh);
+        opacity: 1;
+    }
+}
+.bubble img:nth-child(1){
+    animation-delay: 2s;
+    width: 25px;
+}
+.bubble img:nth-child(2){
+    animation-delay: 5.5s;
+}
+.bubble img:nth-child(3){
+    animation-delay: 3s;
+    width: 20px;
+}
+.bubble img:nth-child(4){
+    animation-delay: 4.5s;
+}
+.bubble img:nth-child(5){
+    animation-delay: 6s;
+    width: 40px;
+}
+.bubble img:nth-child(6){
+    animation-delay: 2.5s;
+    width: 30px;
+}
+.bubble img:nth-child(7){
+    animation-delay: 4s;
+}
+.bubble img:nth-child(8){
+    animation-delay: 5s;
+    width: 30px;
+}
+.bubble img:nth-child(9){
+    animation-delay: 3s;
+}
+.bubble img:nth-child(10){
+    animation-delay: 1s;
+}
+.bubble img:nth-child(11){
+    animation-delay: 2s;
+    width: 20px;
+}
+.bubble img:nth-child(12){
+    animation-delay: 1s;
+    width: 30px;
+}
